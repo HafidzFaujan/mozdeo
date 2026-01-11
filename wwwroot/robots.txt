@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mozdeo.com/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /Home/Services
+Allow: /Home/Gallery  
+Allow: /Home/About
+Allow: /Home/Contact
+
+# Crawl delay
+Crawl-delay: 1

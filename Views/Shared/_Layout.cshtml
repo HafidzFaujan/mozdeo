@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mozdeo | Jasa Cuci Sepatu Premium</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mozdeo adalah jasa cuci sepatu premium dengan pengalaman 35+ tahun. Layanan deep cleaning, unyellowing, repaint dengan teknologi terdepan. 20+ outlet tersedia.">
+    <meta name="keywords" content="cuci sepatu, jasa cuci sepatu, unyellowing, deep cleaning, repaint sepatu, mozdeo, sepatu bersih, jakarta">
+    <meta name="author" content="Mozdeo">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mozdeo - Jasa Cuci Sepatu Premium">
+    <meta property="og:description" content="Layanan cuci sepatu profesional dengan teknologi terdepan dan pengalaman lebih dari 35 tahun.">
+    <meta property="og:type" content="website">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#4A90E2">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/mozdeo-bright.css?v=21.0" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="fas fa-shoe-prints me-2"></i>MOZDEO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/About">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Contact">Kontak</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a class="nav-link btn btn-primary-custom text-white px-4 rounded-pill me-3" href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20ingin%20konsultasi%20tentang%20layanan%20cuci%20sepatu" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
+                    </a>
+                    <a class="nav-link d-flex align-items-center" href="tel:+628111900083">
+                        <i class="fas fa-phone me-2"></i>0811-1900-083
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-shoe-prints me-2"></i>MOZDEO
+                    </h5>
+                    <p class="opacity-75">Jasa cuci sepatu premium dengan teknologi terdepan dan pengalaman lebih dari 35 tahun. Kepercayaan pelanggan adalah prioritas utama kami.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Layanan</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Deep Cleaning</a></li>
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Unyellowing</a></li>
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Repaint</a></li>
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Premium Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Kontak</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Jl. Aria Putra No.30, Kedaung, Kec. Ciputat, Kota Tangerang Selatan, Banten 15454
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            0811-1900-083
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            Mozdeo@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Jam Operasional</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">Senin - Jumat: 08:00 - 20:00</li>
+                        <li class="mb-1">Sabtu: 08:00 - 18:00</li>
+                        <li class="mb-1">Minggu: 10:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 opacity-75">&copy; 2026 Mozdeo. Semua hak dilindungi.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light opacity-75 text-decoration-none me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-light opacity-75 text-decoration-none">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/628111900083" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/mozdeo.js"></script>
+</body>
+</html>

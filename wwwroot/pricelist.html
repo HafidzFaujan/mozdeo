@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozdeo - Daftar Harga Layanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { 
+                background: white !important; 
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .price-container {
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+            }
+            .header {
+                background: #2563EB !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .contact-info {
+                background: #2563EB !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
+        .price-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2563EB, #3B82F6);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .service-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            transition: background 0.3s;
+        }
+        
+        .service-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .service-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #2563EB;
+            font-size: 1.2em;
+        }
+        
+        .package-section {
+            background: #f8f9fa;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .contact-info {
+            background: #2563EB;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="price-container">
+                    <!-- Header -->
+                    <div class="header">
+                        <h1><i class="fas fa-shoe-prints me-3"></i>MOZDEO</h1>
+                        <h3>Daftar Harga Layanan Cuci Sepatu Premium</h3>
+                        <p class="mb-0">Berlaku untuk semua outlet se-Indonesia</p>
+                    </div>
+                    
+                    <!-- Main Services -->
+                    <div class="p-4">
+                        <h4 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>LAYANAN UTAMA</h4>
+                        
+                        <div class="service-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h5><i class="fas fa-soap me-2 text-primary"></i>Deep Cleaning</h5>
+                                    <ul class="text-muted mb-0">
+                                        <li>Pembersihan mendalam sol dalam & luar</li>
+                                        <li>Penghilangan bau tidak sedap</li>
+                                        <li>Pembersihan tali sepatu</li>
+                                        <li>Waktu pengerjaan: 2-3 hari</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <span class="price">Rp 65.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h5><i class="fas fa-sun me-2 text-warning"></i>Unyellowing</h5>
+                                    <ul class="text-muted mb-0">
+                                        <li>Teknologi UV treatment</li>
+                                        <li>Bahan kimia aman berkualitas</li>
+                                        <li>Hasil tahan lama</li>
+                                        <li>Waktu pengerjaan: 3-5 hari</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <span class="price">Rp 45.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h5><i class="fas fa-paint-brush me-2 text-success"></i>Repaint</h5>
+                                    <ul class="text-muted mb-0">
+                                        <li>Cat berkualitas tinggi</li>
+                                        <li>Matching warna sempurna</li>
+                                        <li>Finishing halus dan rapi</li>
+                                        <li>Waktu pengerjaan: 5-7 hari</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <span class="price">Rp 200.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h5><i class="fas fa-crown me-2 text-danger"></i>Premium Care</h5>
+                                    <ul class="text-muted mb-0">
+                                        <li>Deep cleaning + unyellowing</li>
+                                        <li>Waterproof coating</li>
+                                        <li>Anti-bacterial treatment</li>
+                                        <li>Garansi 30 hari</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <span class="price">Rp 85.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Services -->
+                    <div class="package-section p-4">
+                        <h4 class="text-center mb-4"><i class="fas fa-plus-circle text-info me-2"></i>LAYANAN TAMBAHAN</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><i class="fas fa-truck me-2"></i>Pickup & Delivery <span class="price float-end">Rp 15.000</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-bolt me-2"></i>Express Service (24 jam) <span class="price float-end">+50%</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-shield-alt me-2"></i>Insurance (sepatu >2jt) <span class="price float-end">Rp 25.000</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-briefcase me-2"></i>Bag Cleaning <span class="price float-end">Rp 350.000</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-motorcycle me-2"></i>Helm Clean <span class="price float-end">Rp 55.000</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-hat-cowboy me-2"></i>Topi Clean <span class="price float-end">Rp 50.000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package Deals -->
+                    <div class="p-4">
+                        <h4 class="text-center mb-4"><i class="fas fa-gift text-success me-2"></i>PAKET HEMAT</h4>
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="border rounded p-3">
+                                    <h6>Paket 3 Sepatu</h6>
+                                    <p class="text-muted">Deep Cleaning</p>
+                                    <span class="price">Rp 175.000</span>
+                                    <small class="text-success d-block">Hemat 20k</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="border rounded p-3">
+                                    <h6>Paket 5 Sepatu</h6>
+                                    <p class="text-muted">Deep Cleaning</p>
+                                    <span class="price">Rp 275.000</span>
+                                    <small class="text-success d-block">Hemat 50k</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="border rounded p-3">
+                                    <h6>Paket Premium 3 Sepatu</h6>
+                                    <p class="text-muted">Premium Care</p>
+                                    <span class="price">Rp 225.000</span>
+                                    <small class="text-success d-block">Hemat 30k</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member Benefits -->
+                    <div class="package-section p-4">
+                        <h4 class="text-center mb-4"><i class="fas fa-medal text-warning me-2"></i>MEMBER BENEFITS</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><i class="fas fa-percentage me-2"></i>Diskon 10% untuk member</p>
+                                <p><i class="fas fa-shipping-fast me-2"></i>Gratis pickup delivery (min. 3 sepatu)</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="fas fa-clock me-2"></i>Priority service</p>
+                                <p><i class="fas fa-shield-alt me-2"></i>Extended warranty</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h5><i class="fas fa-phone me-2"></i>HUBUNGI KAMI</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p><i class="fas fa-phone me-2"></i>0812-3456-7890</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><i class="fas fa-envelope me-2"></i>info@mozdeo.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><i class="fas fa-globe me-2"></i>www.mozdeo.com</p>
+                            </div>
+                        </div>
+                        <small>*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya</small>
+                    </div>
+                    
+                    <!-- Print Button -->
+                    <div class="text-center p-3 no-print">
+                        <button onclick="printToPdf()" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-file-pdf me-2"></i>Save as PDF
+                        </button>
+                        <button onclick="window.print()" class="btn btn-success btn-lg me-3">
+                            <i class="fas fa-print me-2"></i>Print
+                        </button>
+                        <button onclick="window.close()" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-times me-2"></i>Tutup
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function printToPdf() {
+            // Set document title for PDF filename
+            document.title = "Mozdeo-Price-List";
+            
+            // Trigger print dialog (user can save as PDF)
+            window.print();
+        }
+    </script>
+</body>
+</html>

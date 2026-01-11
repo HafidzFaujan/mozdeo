@@ -1,0 +1,80 @@
+{
+  "name": "Mozdeo - Jasa Cuci Sepatu Premium",
+  "short_name": "Mozdeo",
+  "description": "Layanan cuci sepatu profesional dengan teknologi terdepan dan pengalaman lebih dari 35 tahun",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#dc3545",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["lifestyle", "business", "shopping"],
+  "lang": "id",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/images/screenshot-mobile.png", 
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Layanan Kami",
+      "short_name": "Layanan",
+      "description": "Lihat semua layanan cuci sepatu",
+      "url": "/Home/Services",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-services.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Hubungi Kami",
+      "short_name": "Kontak", 
+      "description": "Hubungi customer service",
+      "url": "/Home/Contact",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-contact.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "WA",
+      "description": "Chat via WhatsApp",
+      "url": "https://wa.me/6281234567890",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-whatsapp.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test WhatsApp</title>
+</head>
+<body>
+    <h1>Test WhatsApp Link</h1>
+    
+    <h3>Test 1: Link Langsung</h3>
+    <a href="https://wa.me/6282258719583?text=Test%20pesan%20dari%20website" target="_blank">
+        Klik untuk test WhatsApp langsung
+    </a>
+    
+    <h3>Test 2: Form Sederhana</h3>
+    <form id="testForm">
+        <input type="text" id="testName" placeholder="Nama" value="Test User"><br><br>
+        <textarea id="testMessage" placeholder="Pesan">Test pesan dari form contact</textarea><br><br>
+        <button type="submit">Test Kirim ke WhatsApp</button>
+    </form>
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('testName').value;
+            const message = document.getElementById('testMessage').value;
+            
+            const whatsappMessage = `Halo Mozdeo!%0A%0ANama: ${name}%0A%0APesan:%0A${message}`;
+            const whatsappUrl = `https://wa.me/6282258719583?text=${whatsappMessage}`;
+            
+            console.log('WhatsApp URL:', whatsappUrl);
+            
+            // Buka WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            alert('WhatsApp akan terbuka di tab baru. Cek apakah pesan sudah terisi!');
+        });
+    </script>
+</body>
+</html>

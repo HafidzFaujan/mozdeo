@@ -1,0 +1,298 @@
+@{
+    ViewData["Title"] = "Beranda";
+}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="hero-title">Jasa Cuci Sepatu Profesional</h1>
+                    <h2 class="hero-subtitle">Unyellowing Sepatu Premium: Solusi Cepat & Hasil Terbaik</h2>
+                    
+                    <ul class="hero-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Tersedia di 20 Outlet & Mall-Mall Terkemuka
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Terima Reparasi Luar Kota & Pulau
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Berpengalaman Lebih dari 35 Tahun
+                        </li>
+                    </ul>
+                    
+                    <div class="hero-buttons">
+                        <a href="#order" class="btn btn-primary-custom me-3">
+                            <i class="fas fa-calendar-alt me-2"></i>Lihat Lokasi
+                        </a>
+                        <a href="/pricelist.html" class="btn btn-outline-custom" target="_blank">
+                            <i class="fas fa-eye me-2"></i>Lihat Price List
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="shoe-container">
+                        <!-- Shoe SVG Illustration -->
+                        <div class="shoe-illustration">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Shoe Body -->
+                                <path d="M50 180 Q80 120 150 110 Q220 105 280 120 Q320 130 350 160 Q360 180 350 200 Q340 220 300 230 L80 240 Q50 230 45 200 Q40 190 50 180 Z" 
+                                      fill="url(#shoeGradient)" stroke="#2563EB" stroke-width="2"/>
+                                
+                                <!-- Shoe Sole -->
+                                <ellipse cx="200" cy="240" rx="150" ry="25" fill="url(#soleGradient)" stroke="#1E40AF" stroke-width="2"/>
+                                
+                                <!-- Shoe Laces -->
+                                <path d="M120 140 Q140 130 160 140" stroke="#F97316" stroke-width="3" fill="none"/>
+                                <path d="M140 150 Q160 140 180 150" stroke="#F97316" stroke-width="3" fill="none"/>
+                                <path d="M160 160 Q180 150 200 160" stroke="#F97316" stroke-width="3" fill="none"/>
+                                
+                                <!-- Shoe Details -->
+                                <circle cx="280" cy="150" r="8" fill="#FFFFFF" opacity="0.8"/>
+                                <circle cx="300" cy="160" r="6" fill="#FFFFFF" opacity="0.6"/>
+                                
+                                <!-- Cleaning Effect -->
+                                <circle cx="150" cy="140" r="15" fill="url(#sparkle)" opacity="0.7">
+                                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="250" cy="130" r="12" fill="url(#sparkle)" opacity="0.5">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+                                </circle>
+                                
+                                <!-- Gradients -->
+                                <defs>
+                                    <linearGradient id="shoeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+                                        <stop offset="50%" style="stop-color:#E2E8F0;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#CBD5E1;stop-opacity:0.7" />
+                                    </linearGradient>
+                                    <linearGradient id="soleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0.6" />
+                                    </linearGradient>
+                                    <radialGradient id="sparkle">
+                                        <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:0" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-elements">
+                            <div class="bubble bubble-1">
+                                <i class="fas fa-soap"></i>
+                            </div>
+                            <div class="bubble bubble-2">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+                            <div class="bubble bubble-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Icons -->
+                        <div class="service-icons">
+                            <div class="service-icon">
+                                <i class="fas fa-broom"></i>
+                                <span>Deep Clean</span>
+                            </div>
+                            <div class="service-icon">
+                                <i class="fas fa-sun"></i>
+                                <span>Unyellowing</span>
+                            </div>
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Repaint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <span class="stat-number">35+</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Sepatu Dibersihkan</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Outlet Tersedia</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Kepuasan Pelanggan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Layanan Kami</h2>
+                <p class="section-subtitle">Berbagai layanan profesional untuk menjaga sepatu Anda tetap bersih dan awet</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <h4 class="service-title">Deep Cleaning</h4>
+                    <p class="service-description">Pembersihan mendalam untuk menghilangkan kotoran dan noda membandel</p>
+                    <div class="service-price">Rp 65.000</div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20tertarik%20dengan%20layanan%20Deep%20Cleaning%20(Rp%2065.000)" class="btn btn-primary-custom btn-sm" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i>Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h4 class="service-title">Unyellowing</h4>
+                    <p class="service-description">Mengembalikan warna putih sepatu yang menguning akibat oksidasi</p>
+                    <div class="service-price">Rp 45.000</div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20tertarik%20dengan%20layanan%20Unyellowing%20(Rp%2045.000)" class="btn btn-primary-custom btn-sm" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i>Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4 class="service-title">Repaint</h4>
+                    <p class="service-description">Pengecatan ulang untuk sepatu yang sudah pudar atau tergores</p>
+                    <div class="service-price">Rp 200.000</div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20tertarik%20dengan%20layanan%20Repaint%20(Rp%20200.000)" class="btn btn-primary-custom btn-sm" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i>Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4 class="service-title">Premium Care</h4>
+                    <p class="service-description">Perawatan lengkap dengan treatment khusus dan proteksi jangka panjang</p>
+                    <div class="service-price">Rp 85.000</div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20tertarik%20dengan%20layanan%20Premium%20Care%20(Rp%2085.000)" class="btn btn-primary-custom btn-sm" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i>Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Proses Kerja Kami</h2>
+                <p class="section-subtitle">Langkah-langkah profesional untuk hasil terbaik</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h5>Konsultasi</h5>
+                    <p class="text-muted">Analisis kondisi sepatu dan menentukan treatment yang tepat</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h5>Pembersihan</h5>
+                    <p class="text-muted">Proses deep cleaning dengan teknologi dan bahan berkualitas</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h5>Treatment</h5>
+                    <p class="text-muted">Aplikasi treatment khusus sesuai kebutuhan sepatu</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h5>Finishing</h5>
+                    <p class="text-muted">Quality control dan finishing untuk hasil sempurna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="order" class="services-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">Siap Membersihkan Sepatu Anda?</h2>
+                <p class="section-subtitle">Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <a href="https://wa.me/628111900083?text=Halo%20Mozdeo!%20Saya%20ingin%20konsultasi%20tentang%20layanan%20cuci%20sepatu" class="btn cta-button-uniform btn-lg w-100" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <a href="tel:+628111900083" class="btn cta-button-uniform btn-static-telepon btn-lg w-100">
+                            <i class="fas fa-phone me-2"></i>Telepon
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <a href="/Home/Contact" class="btn cta-button-uniform btn-static-kontak btn-lg w-100">
+                            <i class="fas fa-map-marker-alt me-2"></i>Kontak
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

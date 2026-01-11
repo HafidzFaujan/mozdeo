@@ -1,0 +1,349 @@
+@{
+    ViewData["Title"] = "Kontak";
+}
+
+<!-- Page Header -->
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h1 class="hero-title" style="color: #FFFFFF !important; font-weight: 900 !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;">Hubungi Kami</h1>
+                <p class="hero-subtitle" style="color: #FFFFFF !important; font-weight: 700 !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;">Siap melayani Anda dengan sepenuh hati. Konsultasi gratis untuk semua kebutuhan perawatan sepatu</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-info text-center h-100">
+                    <div class="contact-icon mx-auto mb-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5 class="mb-3" style="color: #000000 !important;">Alamat Utama</h5>
+                    <p class="text-muted">
+                        Jl. Sepatu Bersih No. 123<br>
+                        Kelurahan Menteng<br>
+                        Jakarta Pusat 10310
+                    </p>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">
+                        <i class="fas fa-directions me-1"></i>Lihat di Maps
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-info text-center h-100">
+                    <div class="contact-icon mx-auto mb-3">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5 class="mb-3" style="color: #000000 !important;">Telepon</h5>
+                    <p class="text-muted">
+                        <strong>Hotline 24/7:</strong><br>
+                        <a href="tel:+628111900083" class="text-danger text-decoration-none">0811-1900-083</a><br>
+                        <strong>Kantor Pusat:</strong><br>
+                        <a href="tel:+628111900083" class="text-danger text-decoration-none">(0811) 1900-083</a>
+                    </p>
+                    <a href="tel:+628111900083" class="btn btn-primary-custom btn-sm">
+                        <i class="fas fa-phone me-1"></i>Telepon Sekarang
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="contact-info text-center h-100">
+                    <div class="contact-icon mx-auto mb-3">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5 class="mb-3" style="color: #000000 !important;">Email</h5>
+                    <p class="text-muted">
+                        <strong>Customer Service:</strong><br>
+                        <a href="mailto:info@mozdeo.com" class="text-danger text-decoration-none">Mozdeo@gmail.com</a><br>
+                        
+                        
+                    </p>
+                    <a href="mailto:info@mozdeo.com" class="btn btn-outline-custom btn-sm">
+                        <i class="fas fa-envelope me-1"></i>Kirim Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form & Map -->
+<section class="process-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h3 class="section-title text-start" style="color: #000000 !important;">Kirim Pesan</h3>
+                <p class="text-muted mb-4">Isi form di bawah ini untuk konsultasi gratis atau pertanyaan lainnya</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label" style="color: #000000 !important;">Nama Depan *</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label" style="color: #000000 !important;">Nama Belakang</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label" style="color: #000000 !important;">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label" style="color: #000000 !important;">No. Telepon *</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="service" class="form-label" style="color: #000000 !important;">Layanan yang Diminati</label>
+                        <select class="form-control" id="service">
+                            <option value="">Pilih Layanan</option>
+                            <option value="deep-cleaning">Deep Cleaning</option>
+                            <option value="unyellowing">Unyellowing</option>
+                            <option value="repaint">Repaint</option>
+                            <option value="premium-care">Premium Care</option>
+                            <option value="pickup-delivery">Pickup & Delivery</option>
+                            <option value="consultation">Konsultasi</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label" style="color: #000000 !important;">Pesan *</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Ceritakan kondisi sepatu Anda atau pertanyaan lainnya..." required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label text-muted" for="newsletter">
+                            Saya ingin menerima newsletter dan promo terbaru dari Mozdeo
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary-custom btn-lg">
+                        <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                    </button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="section-title text-start" style="color: #000000 !important;">Lokasi Kami</h3>
+                <p class="text-muted mb-4">Temukan outlet Mozdeo terdekat dari lokasi Anda</p>
+                
+                <!-- Map Placeholder -->
+                <div class="map-container mb-4">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.85083627913994!2d106.73423699940327!3d-6.3144114781121505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efb87e103aa9%3A0x7e1fc7fadc86182b!2sMozdeo%20Office%20Center!5e0!3m2!1sid!2sid!4v1766646197481!5m2!1sid!2sid"     
+                        height="300"
+                        width="600"
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="contact-info">
+                    <h5 class="mb-3" style="color: #000000 !important;">
+                        <i class="fas fa-clock me-2"></i>Jam Operasional
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-1" style="color: #000000 !important;"><strong>Senin - Jumat</strong></p>
+                            <p class="text-light" style="color: #000000 !important;">08:00 - 20:00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1" style="color: #000000 !important;"><strong>Sabtu</strong></p>
+                            <p class="text-light" style="color: #000000 !important;">08:00 - 18:00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1" style="color: #000000 !important;"><strong>Minggu</strong></p>
+                            <p class="text-light" style="color: #000000 !important;">10:00 - 16:00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1" style="color: #000000 !important;"><strong>Hari Libur</strong></p>
+                            <p class="text-light" style="color: #000000 !important;">Tutup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Outlet Locations -->
+<section class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Outlet Mozdeo</h2>
+                <p class="section-subtitle">20+ outlet tersebar di berbagai kota untuk kemudahan Anda</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Ciputat</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Jl. Aria Putra No.30, Kedaung, Kec. Ciputat, Kota Tangerang Selatan, Banten 15454</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">08111900083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">08:00 - 20:00</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Jakarta Selatan</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Mall Senayan City Lt. 2</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">(0811) 1900-083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">10:00 - 22:00</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Bandung</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Jl. Braga No. 45</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">(0811) 1900-083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">09:00 - 19:00</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Surabaya</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Tunjungan Plaza Lt. 3</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">(0811) 1900-083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">10:00 - 21:00</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Medan</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Jl. Gatot Subroto No. 78</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">(0811) 1900-083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">08:30 - 19:30</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card">
+                    <h5 class="service-title">Yogyakarta</h5>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <span class="text-muted">Jl. Malioboro No. 156</span>
+                    </div>
+                    <div class="contact-item mb-2">
+                        <i class="fas fa-phone text-danger me-2"></i>
+                        <span class="text-muted">(0811) 1900-083</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <span class="text-muted">09:00 - 20:00</span>
+                    </div>
+                    <a href="https://maps.google.com" class="btn btn-outline-custom btn-sm">Lihat Lokasi</a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Pertanyaan Umum</h2>
+                <p class="section-subtitle">Jawaban untuk pertanyaan yang sering diajukan</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item bg-dark border-secondary mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Berapa lama waktu pengerjaan cuci sepatu?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-secondary text-light">
+                                Waktu pengerjaan bervariasi tergantung layanan: Deep Cleaning (2-3 hari), Unyellowing (3-5 hari), 
+                                Repaint (5-7 hari). Tersedia juga layanan express dengan tambahan biaya 50%.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark border-secondary mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Apakah ada garansi untuk layanan yang diberikan?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-secondary text-light">
+                                Ya, kami memberikan garansi 30 hari untuk layanan Premium Care dan garansi 14 hari untuk layanan lainnya. 
+                                Garansi berlaku jika terjadi masalah akibat kesalahan teknis dari pihak kami.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark border-secondary mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Bagaimana cara pemesanan layanan pickup & delivery?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-secondary text-light">
+                                Hubungi WhatsApp kami di 0811-1900-083 atau telepon (0811) 1900-083. Tim kami akan mengatur jadwal 
+                                pickup sesuai dengan ketersediaan. Biaya pickup & delivery Rp 15.000 untuk area Jakarta.
+                            </div>
+                        </div>
+       
