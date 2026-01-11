@@ -1,5 +1,8 @@
 # Mozdeo - Website Toko Cuci Sepatu Premium
 
+**Ujian Akhir Semester Pemrograman Visual**  
+Muhammad Hafidz Faujan - 3123101136 - TI 23 A5
+
 Website profesional untuk layanan cuci sepatu premium dengan desain modern dan responsif.
 
 ## 🚀 Fitur Utama
